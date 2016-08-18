@@ -22,10 +22,11 @@ public class FtpUtil {
 	 * @param username FTP登录账号 
 	 * @param password FTP登录密码 
 	 * @param basePath FTP服务器基础目录,要在此目录上拼接时间目录
-	 * @param filePath FTP服务器文件存放路径。例如分日期存放：/2015/01/01。文件的路径为basePath+filePath
+	 * @param filePath FTP服务器文件存放路径。例如分日期存放：/2016/01/01。文件的路径为basePath+filePath
 	 * @param filename 上传到FTP服务器上的文件名 
 	 * @param input 输入流 
 	 * @return 成功返回true，否则返回false 
+	 * @author duminchao
 	 */  
 	public static boolean uploadFile(String host,int port, String username, String password, String basePath,
 			String filePath, String filename, InputStream input){
@@ -99,7 +100,7 @@ public class FtpUtil {
 	 * @param remotePath FTP服务器上的相对路径 
 	 * @param fileName 要下载的文件名 
 	 * @param localPath 下载后保存到本地的路径 
-	 * @return 
+	 * @auth : duminchao 
 	 */  
 	public static boolean downloadFile(String host, int port, String username, String password, String remotePath,
 			String fileName, String localPath) {
